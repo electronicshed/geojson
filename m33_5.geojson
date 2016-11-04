@@ -1,0 +1,777 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Chart room & helmsman's platform",
+        "Description": "<p>The Ship’s Navigation Officer, generally known as the Pilot, would have manoeuvred the ship and given orders to the Helmsman.</p><p>The steel structure would have been covered in a copper alloy to stop the compass inside from spinning, although it was probably pointless due to the ship swaying from side to side.</p><p>Here lies Miss Muggins cat flap!</p>",
+        "Descrip": "<p>The Ship’s Navigation Officer, generally known as the Pilot, would have manoeuvred the ship and given orders to the Helmsman.</p>",
+        "Deck": 1,
+        "No": 1,
+        "popupContent": "Chart room & helmsman's platform",
+        "Image": "m33/chartroom.jpg",
+        "Audioscr": "wheelhousechartroom",
+        "active": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1104418746799638,
+          50.801817639916464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Wireless telegraphy office",
+        "Description": "<p>The Wireless Office was able to receive orders from as far as 50 miles away!</p><p>That’s as far as here to Ascot Racecourse!</p><p>In the small hatchway, the signalman would be able to pass information to the Wheelhouse.</p>",        "Deck": 1,
+        "No": 2,
+        "popupContent": "Wireless telegraphy office",
+        "Image": "m33/wtoffice.jpg",
+        "Audioscr": "wirelessoffice",
+        "active": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.110468026217859,
+          50.80180746890286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Forward 6-inch mk XII gun",
+        "Description2": "<p>This gun originated from the HMS Delhi and is a Mark XII 6 inch gun.</p><p>It would take a crew of 9 men to operate.</p><p>To operate the gun, the breech would be opened, the shell would be rammed up the barrel, followed by the cordite charge. The breech would then close, and the gun would be ready to fire.</p><p>The gun could fire five times a minute with the shell leaving the barrel at around 250 mph!</p><p>Due to the rifling of the barrel and the copper band around the shell, this allowed the shell to rotate and pick up speed.</p><p>It would take 72 seconds to reach a target of 8 miles away. Once the first shell landed, there would have been 4 trailing behind in the air.</p><p>The original gun buckled the deck so a thicker metal platform had to be placed underneath the gun for reinforcement.</p>",
+        "Descrip": "<p>This gun originated from the HMS Delhi and is a Mark XII 6 inch gun.</p>",
+        "Description": "<p><span class='soundcite' data-url='data/audio/forwardgun.mp3' data-start='0' data-end='24500' data-plays='1'>This gun originated from HMS Delhi and is a Mark XII 6 inch gun.</span></p> <p>It would take a crew of 9 men to operate.</p> <p>To operate the gun, the breech would be opened, the shell would be rammed up the barrel, followed by the cordite charge. The breech would then close, and the gun would be ready to fire.</p> <p>The gun could fire five times a minute with the shell leaving the barrel at around 250 mph!</p><p>        <span class='soundcite' data-url='data/audio/forwardgun.mp3' data-start='24500' data-end='46000' data-plays='1'>Due to the rifling of the barrel and the copper band around the shell, this allowed the shell to rotate and pick up speed.</span></p> <p>It would take 72 seconds to reach a target of 8 miles away. Once the first shell landed, there would have been 4 trailing behind in the air.</p>  <p>The original gun buckled the deck so a thicker metal platform had to be placed underneath the gun for reinforcement.</p>",
+        "Deck": 1,
+        "monitor": 1,
+        "No": 3,
+        "popupContent": "Forward 6-inch mk XII gun",
+        "Image": "m33/gun.jpg",
+        "Audioscr": "forwardgun",
+        "howl": {
+            "src": ["data/audio/forwardgun.mp3"],
+            "sprite": {
+                "start": [0, 2500],
+                "rifling": [24500, 50000]
+            }
+        },
+        "active": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.11027,
+          50.80181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Aft 6-inch mk VII gun",
+        "Description": "When built, this gun was a 6-pounder high-angle Hotchkiss mounted on top of the Funnel Deck, capable of firing 20 rounds a minute to a height of 8,700yds but effective to 1,200yds.",
+        "Deck": 1,
+        "No": 4,
+        "popupContent": "Aft 6-inch mk VII gun",
+        "Image": "m33/gun.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1107979379266908,
+          50.80181255440995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Shower",
+        "Description": "<p>This little cupboard looking space is the Officer’s Wash place complete with shower and washboard.</p>",
+        "Deck": 2,
+        "No": 5,
+        "popupContent": "Shower",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1107174884364213,
+          50.801813889356104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Ward Room",
+        "popupContent": "Ward Room",
+        "Description": "<p>During their time in Gallipoli, Chapple was a steward for the Officers, making tea and serving the crewmen their dinner alongside other important duties. This quaint area is the social and dining space for the Officers.</p><p>Can you find the fly that lies within the sugar?</p>",
+        "Descrip": "<p>During their time in Gallipoli, Chapple was a steward for the Officers, making tea and serving the crewmen their </p>",
+        "Deck": 2,
+        "No": 6,
+        "Image": "m33/wardroom.jpg",
+        "Audioscr": "officerswardroom",
+        "active": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.110693683831414,
+          50.80182978156175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Cabin 4",
+        "Description": "part of 6 small cabins for the Officers",
+        "popupContent": "Cabin 4",
+        "Deck": 2,
+        "No": 7,
+        "Image": "m33/cabin4.jpg"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+                        [[ -1.1106512881815434, 50.801841036772096],
+                        [  -1.110615748912096, 50.801841142720086],
+                        [  -1.1106155812740326, 50.80181899958415],
+                        [  -1.1106516234576702, 50.80181910553219]]
+                        ]
+
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Cabin 1",
+        "Description": "part of 6 small cabins for the Officers",
+        "popupContent": "Cabin 1",
+        "Deck": 2,
+        "No": 8,
+        "Image": "m33/cabin1.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1106956954881753,
+          50.80179842093744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Cabin 2",
+        "Description": "<p>This is where the Captain’s day cabin is situated. Here he could write letters on his typewriter and use the maps to help chart his route.</p><p>The night cabin is where the Captain would rest and sleep.</p><p>This is Squab’s dog bowl. The Captain also owned a dog during the Gallipoli campaign. The men were used to having animals on board for companionship.</p>",
+        "popupContent": "Cabin 2",
+        "Deck": 2,
+        "No": 9,
+        "Image": "m33/cabin2.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.11065780928584,
+          50.80179820904125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Cabin 3",
+        "Description": "<p>The Captain’s mother-in-law donated Miss Muggins, the ship’s cat.</p><p>She fell overboard when her tail caught fire. Luckily, falling into the water put out the fire, so she only lost the tip of her tail. The Captain dangled over the edge of the ship so Miss Muggins could be rescued.</p><p>This is where the Captain’s day cabin is situated. Here he could write letters on his typewriter and use the maps to help chart his route.</p><p>The night cabin is where the Captain would rest and sleep.</p><p>This is Squab’s dog bowl. The Captain also owned a dog during the Gallipoli campaign. The men were used to having animals on board for companionship.</p><p>This little cupboard looking space is the Officer’s Wash place complete with shower and washboard.</p>",
+
+
+        "Descrip": "<p>The Captain’s mother-in-law donated Miss Muggins, the ship’s cat.</p>",
+        "popupContent": "Cabin 3",
+        "Deck": 2,
+        "No": 10,
+        "Image": "m33/cabin4.jpg",
+        "Audioscr": "officerscabins",
+        "active": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.110620090721568,
+          50.80179863283362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "maxim gun 1",
+        "Description": "For much closer protection M.33 carried three Maximum guns - machine guns which could be set up on either port or starboard side and fire 450 rounds a minute",
+        "popupContent": "maxim gun 1",
+        "Deck": 2,
+        "No": 11,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1104401982993295,
+          50.80176508965559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "maxim gun 2",
+        "Description": "For much closer protection M.33 carried three Maximum guns - machine guns which could be set up on either port or starboard side and fire 450 rounds a minute",
+        "popupContent": "maxim gun 2",
+        "Deck": 2,
+        "No": 12,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1106098480195215,
+          50.80176636103357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Former lobby, cabins, cooks & stewards mess",
+        "Description": "There were seperate but tiny messes for the Chief Petty Officers and Stewards, And a Wardroom and six small cabins for the Officers",
+        "popupContent": "Former lobby, cabins, cooks & stewards mess",
+        "Deck": 2,
+        "monitor": 1,
+        "No": 13,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.110424440321367,
+          50.80183204884865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "C.P.O's mess",
+        "Description": "<p>The Chief Petty Officers Mess is a small space for 3 men where they would eat and sleep. This gives a good insight into the food they would have consumed.</p><p>The plates and mugs are numbered so that any dirty or unclean belongings could be located and blamed on the owner.</p>",
+        "Descrip": "<p>The Chief Petty Officers Mess is a small space for 3 men where they would eat and sleep.</p>",
+        "popupContent": "C.P.O's mess",
+        "Deck": 2,
+        "monitor": 1,
+        "No": 14,
+        "Image": "m33/cpomess.jpg",
+        "Audioscr": "cpomess",
+        "active": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1103821955293824,
+          50.80184306744084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Galley",
+        "Description": "<p>Here is where the chef would have fed all 72 members of the crew, with no porthole or ventilation.</p><p>On the small coal fired stove, the chef could make stews, roast meat, and prepare tinned vegetables.</p><p>Fresh vegetables were unavailable unless you were fortunate enough to bring it on board after leaving port!</p><p>The men would also be given cheese and biscuits, or preservatives instead of cheese.</p><p>The main diet did not differ from the men 100 years before.</p><p>Let’s hope they had fresher food than 2 year old salted meat!</p>",
+        "Descrip": "<p>Here is where the chef would have fed all 72 members of the crew, with no porthole or ventilation.</p>",
+        "popupContent": "Galley",
+        "Deck": 2,
+        "monitor": 1,
+        "No": 15,
+        "Image": "m33/galley.jpg",
+        "Audioscr": "galley",
+        "active": 1
+
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [   [-1.1104118172079325, 50.80181732383932     ],
+                [-1.1103691533207893, 50.80181662987929   ],
+                [-1.110369823873043, 50.80179077854811      ],
+                [-1.1104124039411545, 50.801790142859446     ]   ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Wash place",
+        "Description": "<p>67 crewmen had to share 2 toilets and 2 basins. Plumbed toilets and running water were quite a new invention, so they may have felt lucky to have toilets that could use seawater to pump out the waste directly into the sea.</p><p>In hot weather, the crewmen chose to wash in the sea so they could have an unlimited water supply.</p>",
+        "popupContent": "Wash place",
+        "Deck": 2,
+        "monitor": 1,
+        "No": 16,
+        "Image": "m33/washroom.jpg",
+        "Audioscr": "data/washplace.ogg",
+        "active": 0
+
+
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [   [-1.1103684827685356, 50.80184184550822     ],
+                [-1.1103379726409912, 50.80184226930019     ],
+                [-1.1103379726409912, 50.801790142859446    ],
+                [-1.1103674769401548, 50.801790142859446    ]   ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Steering Compartment",
+        "Description": "<p>The Tiler Flat held the steam driven machinery to steer the ship. However, it was also where the 8-10 Royal Marine Light Infantry would sling their hammocks to sleep. It would have been a very noisy and very hot environment to be in.</p>",
+        "popupContent": "Steering Compartment",
+        "Deck": 3,
+        "No": 17,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1108442060321977,
+          50.80182611575948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "AFT magazine",
+        "Description": "<p>This section would have been filled with racks of 6” shells, followed by the handling room where members of the crew would have been hoisted out for the aft gun.</p><p>This would have been the magazine for the cordite charges. HMS Victory needed gunpowder for a shot to be fired out of the canon; a 6” shell needed a cordite charge to propel it out of the barrel in the M33.</p>",
+        "popupContent": "AFT magazine",
+        "Deck": 3,
+        "No": 18,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1108354888528993,
+          50.80179899305648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Aft handing room",
+        "Description": "",
+        "popupContent": "Aft handling room",
+        "Deck": 3,
+        "No": 19,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.11082744222585462,
+          50.80179687409464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Shell room",
+        "Description": "<p>This is where they would have housed:</p><p>100 x 100lb Lyddite common pointed mild steel cap, non-armour piercing shells.</p><p>125 x Amatol High Explosive shells and 25 x shrapnel shells containing 874 balls.</p>",
+        "popupContent": "Shell room",
+        "Deck": 3,
+        "No": 20,
+        "Image": "m33/shellracks.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.110751669821184,
+          50.80176636103357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Captains & Officers' store",
+        "Description": "<p>This is where the Officers and the Captain would store their possessions and equipment.</p><p>During the Russian Civil War of 1919, HMS M33 assisted the withdrawal of the White Russians whilst up the River Divina. She was hit five times but did not sink and nobody was injured</p><p>HMS M33 is known as a ‘lucky ship’ as a shell managed to skim its way into the boiler room but did not explode!</p>",
+        "popupContent": "Captains & Officers' store",
+        "Deck": 3,
+        "No": 21,
+        "Image": "m33/captainsofficerstores.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1107214949697664,
+          50.80176720861888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Engine & boiler room",
+        "Description": "<p>This Cathedral like space originally housed two Triple Expansion Steam Engines, two Oil-Fired Yarrow Water-Tube Boilers and a steam-driven 26 ¼ KW generator which could produce 105 volts of direct current.<p>HMS M33 produced a top speed of 10 knots, however the flat-bottomed hull mixed with bad weather conditions caused her to roll from side to side. This would have made life hellish for her engine room team.</p><p>The steam evaporator produced 10 tons of fresh water per day.</p>",
+        "popupContent": "Engine & boiler room",
+        "Deck": 3,
+        "No": 22,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1106584630579164,
+          50.801762970692224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Oil & Fuel",
+        "Description": "<p>This eerie looking site is where the oil fuel tanks use to stretch the whole width of the vessel and contained around 45 tons of light oil (95% full).</p><p>It was in this space that M33’s sister ship M30 took a direct hit from an Australian howitzer. The shells penetrated into the boiler room and exploded forcing the crew to abandon the burning ship.</p><p>M33 and M32 managed to salvage the two 6” guns from the burnt out hulk, even under enemy fire.</p>",
+        "popupContent": "Oil & Fuel",
+        "Deck": 3,
+        "No": 23,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1105149648756196,
+          50.80175958035063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Midships Stores",
+        "Description": "",
+        "popupContent": "Midships Stores",
+        "Deck": 3,
+        "No": 24,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.110453274068277,
+          50.80176042793606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Boatswain's, Engineer's & Electrical",
+        "Description": "",
+        "popupContent": "Boatswain's, Engineer's & Electrical",
+        "Deck": 3,
+        "No": 25,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1103795133203676,
+          50.80176042793606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Forward Shell Rm, 6-pdr & Small Arms Store",
+        "Description": "<p>This section would have been filled with racks of 6” shells, followed by the handling room where members of the crew would have been hoisted out for the aft gun.</p><p>This would have been the magazine for the cordite charges. HMS Victory needed gunpowder for a shot to be fired out of the canon; a 6” shell needed a cordite charge to propel it out of the barrel in the M33.</p>",
+        "popupContent": "Forward Shell Rm, 6-pdr & Small Arms Store",
+        "Deck": 3,
+        "No": 26,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.110356714543741,
+          50.80175958035063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Carpenters store, Lamp Room & Spirit Room",
+        "Description": "",
+        "popupContent": "Carpenters store, Lamp Room & Spirit Room",
+        "Deck": 3,
+        "No": 27,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.110317151960771,
+          50.80176042793606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Forward Handling Rm & Magazine",
+        "Description": "<p>This is where they kept the cordite charges separate in the Forward Magazine.</p><p>Cordite charges and shells were kept separate as one hit or one spark could explode the whole ship, as witnessed at the Battle of Jutland.</p><p>The structure and compartments of the handling room have been removed which would have housed and hoisted shells and kept the explosive cordite separate.</p><p>The stripped out area became a mine storage unit when she was being converted into a Minelayer in 1924. In here they could hold up to 16 Loop Mines and their control cables.</p><p>These were grounded mines (laid on the seabed in front of harbours) and were activated by an observation post ashore.</p>",
+        "popupContent": "Forward Handling Rm & Magazine",
+        "Deck": 3,
+        "No": 28,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1102842949003389,
+          50.801760004143354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Crew's Mess",
+        "Description": "<p>The Forward Mess was the living and eating space for up to 52 men, holding only 44 hammocks shared between them.</p><p>Originally they would have had one hatchway on the forecastle to allow the crew to come in and out.</p><p>The black boxes were used to house the men’s caps.</p><p>The wooden ones are ditty boxes.  A ditty box is the container in which a sailor would have to place all his chosen personal belongings such as toothpaste, photographs, and sewing kits.</p>",
+        "Descrip": "<p>The Forward Mess was the living and eating space for up to 52 men, holding only 44 hammocks shared between them.</p>",
+        "popupContent": "Crew's Mess",
+        "Deck": 3,
+        "No": 29,
+        "Image": "m33/crewsmess.jpg",
+        "Audioscr": "forwardmess",
+        "howl": {
+            "src": ["data/audio/forwardmess.mp3"],
+            "sprite": {
+              "start": [0, 2500],
+              "blackboxes": [24500, 50000],
+              "woodenboxes": [4000, 7500]
+          }
+      },
+        "active": 1
+
+
+
+    },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1102601885795593,
+          50.80179869640314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "Name": "Provision Room & Gunner's store",
+        "Description": "<p>This is where the crew would keep their basic supplies for the trip.</p><p>They used tinned goods such as boiled beef and tinned apricots.</p>",
+        "popupContent": "Provision Room & Gunner's store",
+        "Deck": 3,
+        "No": 30,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1102266274065187,
+          50.80176381827758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-color": "#7e7e7e",
+        "Name": "Technical Control",
+        "Description": "",
+        "popupContent": "Technical Control",
+        "Deck": 3,
+        "No": 31,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1103795133203676,
+          50.80178670307651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-color": "#7e7e7e",
+        "Name": "mon0",
+        "Description": "",
+        "popupContent": "mon0",
+        "Deck": 2,
+        "No": 32,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1104626953601837,
+          50.80185333733321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-color": "#7e7e7e",
+        "Name": "mon1",
+        "Description": "",
+        "popupContent": "mon1",
+        "Deck": 2,
+        "No": 33,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1103500425815582,
+          50.80185121837384
+        ]
+
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-color": "#7e7e7e",
+        "Name": "mon2",
+        "Description": "",
+        "popupContent": "mon2",
+        "Deck": 2,
+        "No": 34,
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1102930456399918,
+          50.80182494326968
+        ]
+      }
+    }
+
+  ]
+}

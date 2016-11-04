@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "image": "http://ktp.dev.purplegroup.com/images/CroppedOffice.jpg"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.1069101095199585,
+              50.80009671528972
+            ],
+            [
+              -1.1066874861717224,
+              50.80013740082045
+            ],
+            [
+              -1.1066177487373352,
+              50.799979744191596
+            ],
+            [
+              -1.1068511009216309,
+              50.79994414423403
+            ],
+            [
+              -1.1069101095199585,
+              50.80009671528972
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

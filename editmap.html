@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet.draw drawing and editing tools</title>
+
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="bower_components/leaflet-draw/dist/leaflet.draw.css" />
+
+    <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+
+    <script src="bower_components/leaflet-draw/dist/leaflet.draw.js"></script>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="Leaflet.ImageOverlay.Rotated.js"></script>
+
+<!--
+    <script src="../src/edit/handler/Edit.Poly.js"></script>
+    <script src="../src/edit/handler/Edit.SimpleShape.js"></script>
+    <script src="../src/edit/handler/Edit.Circle.js"></script>
+    <script src="../src/edit/handler/Edit.Rectangle.js"></script>
+    <script src="../src/edit/handler/Edit.Marker.js"></script>
+
+    <script src="../src/draw/handler/Draw.Feature.js"></script>
+    <script src="../src/draw/handler/Draw.Polyline.js"></script>
+    <script src="../src/draw/handler/Draw.Polygon.js"></script>
+    <script src="../src/draw/handler/Draw.SimpleShape.js"></script>
+    <script src="../src/draw/handler/Draw.Rectangle.js"></script>
+    <script src="../src/draw/handler/Draw.Circle.js"></script>
+    <script src="../src/draw/handler/Draw.Marker.js"></script>
+
+    <script src="../src/ext/TouchEvents.js"></script>
+    <script src="../src/ext/LatLngUtil.js"></script>
+    <script src="../src/ext/GeometryUtil.js"></script>
+    <script src="../src/ext/LineUtil.Intersect.js"></script>
+    <script src="../src/ext/Polyline.Intersect.js"></script>
+    <script src="../src/ext/Polygon.Intersect.js"></script>
+
+    <script src="../src/Control.Draw.js"></script>
+    <script src="../src/Tooltip.js"></script>
+    <script src="../src/Toolbar.js"></script>
+
+    <script src="../src/draw/DrawToolbar.js"></script>
+    <script src="../src/edit/EditToolbar.js"></script>
+    <script src="../src/edit/handler/EditToolbar.Edit.js"></script>
+    <script src="../src/edit/handler/EditToolbar.Delete.js"></script>
+-->
+
+</head>
+<body>
+	<div id="map" style="width: 800px; height: 600px; border: 1px solid #ccc"></div>
+	<button id="changeColor">Rectangle -> Blue</button>
+	<script>
+
+/*
+		var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+			osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib}),
+			map = new L.Map('map', {layers: [osm], center: new L.LatLng(-37.7772, 175.2756), zoom: 15 });
+*/
+
+
+    /*************************************************************
+        The options for the map view use tilejson as detailed in
+        https://github.com/mapbox/tilejson-spec/tree/master/2.1.0
+    **************************************************************/
+    tilespecification = {
+        tilejson:   "2.1.0",
+        name:       "compositing",
+        description:"A simple, light grey world.",
+        version:    "1.0.0",
+        attribution:'&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        template:   "{{#__teaser__}}{{NAME}}{{/__teaser__}}",
+        legend:     "Dangerous zones are red, safe zones are green",
+        scheme:     "xyz",
+        tiles:      [ "http://{s}.tile.osm.org/{z}/{x}/{y}.png" ],
+        grids:      [ "http://localhost:8888/admin/1.0.0/broadband/{z}/{x}/{y}.grid.json" ],
+        data:       [ "http://localhost:8888/admin/data.geojson" ],
+        data:       [ "http://ktp.dev.purplegroup.com/data/m33_5.geojson" ],
+
+        minzoom:    0,
+        maxzoom:    25,
+        bounds:     [[50.801759, -1.110911], [50.801867, -1.110074]],
+        center:     [ 50.80181, -1.11036, 21 ]
+    };
+
+
+    tileoptions = {
+        attribution:'&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        tiles:      [ "http://{s}.tile.osm.org/{z}/{x}/{y}.png" ],
+        data:       [ "m33_5.geojson" ],
+        minzoom:    0,
+        maxzoom:    25,
+        bounds:     [[50.801759, -1.110911], [50.801867, -1.110074]],
+        center:     [ 50.80181, -1.11036, 21 ]
+    };
+
+    officeTile = {
+        attribution:'&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        tiles:      [ 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}' ],
+        data:       [  "officelocations.geojson" ],
+        minzoom:    0,
+        maxzoom:    25,
+        bounds:     [[50.79994414423403, -1.1068806052207947], [50.8000950200585, -1.1066472530364988]],
+        center:     [ 50.800028905993145, -1.1067518591880798, 20 ]
+
+        ,
+
+    };
+
+
+
+
+    /*************************************************************
+        maptile
+    **************************************************************/
+    function maptile(mapId, tilejson) {
+
+        var osm,
+            map;
+
+        osm = L.tileLayer(tilejson.tiles[0], {
+                maxZoom: tilejson.maxzoom,
+                attribution: tilejson.attribution,
+                id: 'up757955.51d163bb',
+                accessToken: 'pk.eyJ1IjoidXA3NTc5NTUiLCJhIjoiZWE5ODRmZjQzYWQzZDI1MWMyOGJlNzg0ZDM1NGE5MjgifQ.Z1EHtZo3-i9eYexQBSJZrw'
+            });
+
+        /* Set initial map view */
+        //map = L.map(mapId, {center: [tilejson.center[0], tilejson.center[1]], zoom: tilejson.center[2]});
+
+        // initialize the map on the "maith a given center and zoom
+        map = L.map(mapId).setView([tilejson.center[0], tilejson.center[1]], tilejson.center[2]).addLayer(osm);
+
+
+        return map;
+
+    } /* maptile */
+
+    /*************************************************************
+        maptile
+    **************************************************************/
+    function mapimage(map, imagedetails) {
+
+        var image,
+            editable = false;
+
+        //image = L.imageOverlay(imageloc, tilejson.bounds).addTo(map);
+
+    function coordtolatlng(coordinates) {
+        return L.latLng(coordinates[1], coordinates[0])
+    }
+
+            topleft    = coordtolatlng(imagedetails.features[0].geometry.coordinates[0][0]),
+            topright   = coordtolatlng(imagedetails.features[0].geometry.coordinates[0][1]),
+            bottomleft = coordtolatlng(imagedetails.features[0].geometry.coordinates[0][3])
+
+        var overlay = L.imageOverlay.rotated(imagedetails.features[0].properties.image, topleft, topright, bottomleft, {
+            opacity:1.0,
+            interactive: true,
+            attribution: "&copy; <a href='http://www.ign.es'>Instituto Geográfico Nacional de España</a>"
+        }).addTo(map);
+
+        if (editable) {
+            var marker1 = L.marker(topleft, {draggable: true} ).addTo(map),
+                marker2 = L.marker(topright, {draggable: true} ).addTo(map),
+                marker3 = L.marker(bottomleft, {draggable: true} ).addTo(map);
+
+                function repositionImage() {
+        			overlay.reposition(marker1.getLatLng(), marker2.getLatLng(), marker3.getLatLng());
+        		};
+
+        		marker1.on('drag dragend', repositionImage);
+        		marker2.on('drag dragend', repositionImage);
+        		marker3.on('drag dragend', repositionImage);
+        }
+
+
+        return image;
+
+    } /* mapimage */
+
+
+    /*************************************************************
+        Add geoJson data to the layer
+    **************************************************************/
+function geojsonElements (map, locationelements) {
+
+    var markerLayer;
+
+    markerLayer = L.geoJson(locationelements, {
+        //onEachFeature: onEachFeature,
+        onEachFeature: function onEachFeature(feature, layer) {
+
+            if (feature.properties && feature.properties.popupContent) {
+                layer.bindPopup(feature.properties.popupContent);
+            }
+        },
+
+/*
+        filter: function(feature, layer) {
+            if (feature.properties.Deck == 2) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+*/
+
+
+    }).addTo(map);
+}
+
+
+    /*************************************************************
+        Create the map and set the image overlay
+    **************************************************************/
+    var map = maptile('map', officeTile);
+    //var image = L.imageOverlay('http://ktp.dev.purplegroup.com/images/CroppedOffice.jpg', officeTile.bounds).addTo(map);
+    //var image = mapimage(map, officeTile, 'http://ktp.dev.purplegroup.com/images/CroppedOffice.jpg');
+
+    officeimage = $.ajax({url: 'officebounds.geojson', dataType: 'json', async: false});
+    var image = mapimage(map, officeimage.responseJSON);
+
+    officeimage = $.ajax({url: 'm33bounds.geojson', dataType: 'json', async: false});
+    var image = mapimage(map, officeimage.responseJSON);
+
+
+    locationelements = $.ajax({url: tileoptions.data[0], dataType: 'json', async: false});
+    geojsonElements(map, locationelements.responseJSON);
+
+    officelocationelements = $.ajax({url: officeTile.data[0], dataType: 'json', async: false});
+    geojsonElements(map, officelocationelements.responseJSON);
+
+
+
+
+
+
+
+
+    /*************************************************************
+        Set up the leaflet drawing
+    **************************************************************/
+        var drawnItems = new L.FeatureGroup();
+        map.addLayer(drawnItems);
+
+        // Set the title to show on the polygon button
+        L.drawLocal.draw.toolbar.buttons.polygon = 'Draw a polygon!';
+
+        var drawControl = new L.Control.Draw({
+            position: 'topright',
+            draw: {
+                polyline: false,
+                polygon: true,
+                circle: false,
+                marker: true
+            },
+            edit: {
+                featureGroup: drawnItems,
+                remove: true
+            }
+        });
+        map.addControl(drawControl);
+
+        map.on('draw:created', function (e) {
+            var type = e.layerType,
+                layer = e.layer;
+
+            if (type === 'marker') {
+                layer.bindPopup('A popup!');
+            }
+
+            drawnItems.addLayer(layer);
+        });
+
+        map.on('draw:edited', function (e) {
+            var layers = e.layers;
+            var countOfEditedLayers = 0;
+            layers.eachLayer(function(layer) {
+                countOfEditedLayers++;
+            });
+            console.log("Edited " + countOfEditedLayers + " layers");
+        });
+
+        L.DomUtil.get('changeColor').onclick = function () {
+            drawControl.setDrawingOptions({ rectangle: { shapeOptions: { color: '#004a80' } } });
+        };
+
+
+
+
+
+    </script>
+</body>
+</html>
