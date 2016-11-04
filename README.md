@@ -1,0 +1,1 @@
+Collection of interfaces to Leaflet map
